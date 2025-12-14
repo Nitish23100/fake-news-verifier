@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-body, 'Inter', 'Helvetica Neue', Arial, sans-serif);
+  background-color: var(--color-background-primary, #000000);
+  color: var(--color-text-primary, #FFFFFF);
+  line-height: 1.5;
+}
+
+/* Fallback CSS variables in case design tokens fail to load */
+:root {
+  --color-primary-orange: #FF6B35;
+  --color-primary-orangeHover: #E55A2B;
+  --color-background-primary: #000000;
+  --color-background-secondary: #1A1A1A;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #CCCCCC;
+  --color-neutral-mediumGray: #333333;
+  --font-family-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-weight-semibold: 600;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 12px;
+  --shadow-large: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .btn-primary {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  
+  .card {
+    padding: var(--spacing-md);
+  }
+}
+
+.btn-primary {
+  background-color: var(--color-primary-orange, #FF6B35);
+  color: var(--color-text-primary, #FFFFFF);
+  padding: var(--spacing-sm, 8px) var(--spacing-xl, 32px);
+  border: none;
+  border-radius: var(--border-radius-medium, 8px);
+  font-weight: var(--font-weight-semibold, 600);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-orangeHover, #E55A2B);
+  transform: translateY(-2px);
+}
+
+.card {
+  background-color: var(--color-background-secondary, #1A1A1A);
+  border-radius: var(--border-radius-large, 12px);
+  padding: var(--spacing-xl, 32px);
+  border: 1px solid var(--color-neutral-mediumGray, #333333);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-large, 0 8px 16px rgba(0,0,0,0.2));
+  border-color: var(--color-primary-orange, #FF6B35);
+}
+
+/* Two column layout for verify page */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Navbar responsive styles */
+.mobile-hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .two-column-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .desktop-menu {
+    display: none !important;
+  }
+  
+  .mobile-hamburger {
+    display: block !important;
+  }
+}
