@@ -4,7 +4,7 @@ A full-stack application for verifying news articles using AI-powered fact-check
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🚀 Quick Start
+## 🚀 Quick Start Guide
 
 **New to the project?** Check out [QUICK_START.md](QUICK_START.md) for a 5-minute setup guide!
 
