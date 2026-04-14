@@ -6,7 +6,7 @@ A full-stack application for verifying news articles using AI-powered fact-check
 
 ## 🚀 Quick Start Guide
 
-**New to the project?** Check out [QUICK_START.md](QUICK_START.md) for a 5-minute setup guide!
+**New to the project?** Check out [QUICK_START.md](QUICK_START.md) for a 5-minute setup guide.
 
 ```bash
 # 1. Setup environment
