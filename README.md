@@ -13,7 +13,7 @@ A full-stack application for verifying news articles using AI-powered fact-check
 cp backend/.env.example backend/.env
 # Edit backend/.env with your API keys
 
-# 2. Install & run backend
+# 2. Install & run backend.
 cd backend && npm install && npm run dev
 
 # 3. Install & run frontend (new terminal)
