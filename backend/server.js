@@ -25,7 +25,7 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Middlewares
-app.use(cors({ origin: 'http://localhost:5173' })); // Frontend port
+app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5176'] })); // Frontend ports
 app.use(express.json());
 
 // Health check endpoint
