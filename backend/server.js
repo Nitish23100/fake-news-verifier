@@ -25,7 +25,16 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Middlewares
-app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:5176'] })); // Frontend ports
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:5176',
+  process.env.FRONTEND_URL // Add your Vercel frontend URL in environment variables
+].filter(Boolean);
+
+app.use(cors({ 
+  origin: allowedOrigins,
+  credentials: true 
+}));
 app.use(express.json());
 
 // Health check endpoint
