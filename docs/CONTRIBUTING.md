@@ -16,7 +16,7 @@
 
 ### Making Changes
 
-1. **Write clean, readable code**
+1. **Write clean, readable code with comments**
    - Follow existing code style
    - Add comments for complex logic
    - Use meaningful variable names
