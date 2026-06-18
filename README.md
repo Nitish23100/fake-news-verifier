@@ -95,7 +95,7 @@ Contributions are welcome! Please read [CONTRIBUTING.md](docs/CONTRIBUTING.md) f
 
 ## 📝 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License
 
 ## 🙏 Acknowledgments
 
